@@ -70,7 +70,7 @@ public abstract class InputParser {
 
         @Override
         public void parse() {
-            if (input.startsWith("BITCOIN:-")) {
+            if (input.startsWith("AJN:-")) {
                 try {
                     final byte[] serializedPaymentRequest = Qr.decodeBinary(input.substring(9));
 
@@ -88,9 +88,9 @@ public abstract class InputParser {
 
                     error(R.string.input_parser_invalid_paymentrequest, x.getMessage());
                 }
-            } else if (input.startsWith("bitcoin:") || input.startsWith("BITCOIN:")) {
+            } else if (input.startsWith("ajn:") || input.startsWith("AJN:")) {
                 try {
-                    final BitcoinURI bitcoinUri = new BitcoinURI(null, "bitcoin:" + input.substring(8));
+                    final BitcoinURI bitcoinUri = new BitcoinURI(null, "ajn:" + input.substring(8));
                     final Address address = bitcoinUri.getAddress();
                     if (address != null && !Constants.NETWORK_PARAMETERS.equals(address.getParameters()))
                         throw new BitcoinURIParseException("mismatched network");
