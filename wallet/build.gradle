@@ -44,7 +44,7 @@ android {
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId 'de.schildbach'
+        applicationId 'ajnetwork'
         dexOptions {
             preDexLibraries false
         }

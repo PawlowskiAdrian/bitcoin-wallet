@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package de.schildbach.wallet.integration.sample;
+package ajnetwork.wallet.integration.sample;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +28,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.protobuf.ByteString;
-import de.schildbach.wallet.integration.android.BitcoinIntegration;
+import ajnetwork.wallet.integration.android.BitcoinIntegration;
 import org.bitcoin.protocols.payments.Protos;
 import org.bitcoinj.core.Address;
 import org.bitcoinj.core.AddressFormatException;
