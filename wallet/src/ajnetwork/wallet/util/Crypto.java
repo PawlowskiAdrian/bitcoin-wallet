@@ -17,6 +17,7 @@
 package ajnetwork.wallet.util;
 
 import com.google.common.io.BaseEncoding;
+
 import org.bouncycastle.crypto.BufferedBlockCipher;
 import org.bouncycastle.crypto.CipherParameters;
 import org.bouncycastle.crypto.DataLengthException;
